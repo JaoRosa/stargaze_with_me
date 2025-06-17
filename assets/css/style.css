@@ -1,172 +1,202 @@
-/* Reset geral e remoção da rolagem visível */
+/* ===== Reset geral e remoção da rolagem visível ===== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
+  margin: 0; /* Remove todas as margens padrão */
+  padding: 0; /* Remove todos os preenchimentos padrão */
+  box-sizing: border-box; /* Inclui borda e padding dentro da largura/altura total */
+
+  /* ===== COMPORTAMENTO ===== */
+  overflow-x: hidden; /* Impede a rolagem horizontal */
 }
 
 html, body {
-  height: 100%;
-  overflow-x: hidden;
-  -ms-overflow-style: none;  /* IE e Edge */
-  scrollbar-width: none;     /* Firefox */
-}
+  height: 100%; /* Faz com que o HTML e o body ocupem toda a altura da tela */
 
-body::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari e Opera */
+  /* ===== COMPORTAMENTO ===== */
+  -ms-overflow-style: none;  /* Remove a barra de rolagem no IE/Edge */
+  scrollbar-width: none;     /* Remove a barra de rolagem no Firefox */
 }
 
 body {
-  background: linear-gradient(120deg, #020024 0%, #131357 56%, #3c0054 80%);
-  background-color: #020024;
-  color: antiquewhite;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: 20px;
-  display: flex;
-  font-family: Arial, sans-serif;
+  /* ===== FUNDO ===== */
+  background: linear-gradient(120deg, #020024 0%, #131357 56%, #3c0054 80%); /* Gradiente de fundo */
+  background-color: #020024; /* Cor de fundo de backup */
+
+  /* ===== COMPORTAMENTO ===== */
+  flex-direction: column; /* Organiza os filhos em coluna */
+  padding-top: 20px; /* Espaçamento no topo */
+  padding-bottom: 20px; /* Espaçamento na parte inferior */
+  align-items: center; /* Alinha os itens ao centro na vertical */
+  justify-content: center; /* Alinha os itens ao centro na horizontal */
+  display: flex; /* Ativa o flexbox */
+
+  /* ===== TEXTO ===== */
+  color: antiquewhite; /* Cor do texto principal */
+  font-family: Arial, sans-serif; /* Define a fonte principal */
 }
 
-/* Container principal */
+/* ===== Container principal ===== */
 .container {
-  text-align: center;
-  padding: 20px;
-  border-radius: 16px;
-  max-width: 720px;
-  width: 100%;
-  border: 2px solid #f77acb;
-  box-shadow: 0 0 15px #f77acb80;
-  background-color: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(5px);
+  text-align: center; /* ===== TEXTO: Centraliza o conteúdo ===== */
+
+  /* ===== COMPORTAMENTO ===== */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 16px; /* Arredonda os cantos */
+  max-width: 720px; /* Largura máxima */
+  width: 100%; /* Ocupa toda a largura possível */
+
+  /* ===== FUNDO ===== */
+  border: 2px solid #f77acb; /* Borda rosa */
+  box-shadow: 0 0 15px #f77acb80; /* Sombra rosa suave */
+  background-color: rgba(255, 255, 255, 0.03); /* Fundo translúcido */
+  backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
 }
 
-/* Títulos */
+/* ===== Títulos ===== */
 h1, h2 {
-  color: antiquewhite;
-  margin-bottom: 20px;
-  font-size: 2rem;
-  text-shadow: 1px 1px 2px #00000080;
-  border-bottom: 2px solid #f77acb;
-  display: inline-block;
-  padding-bottom: 6px;
+  /* ===== TEXTO ===== */
+  color: antiquewhite; /* Cor dos títulos */
+  margin-bottom: 20px; /* Espaço abaixo */
+  font-size: 2rem; /* Tamanho da fonte */
+  text-shadow: 1px 1px 2px #00000080; /* Sombra leve no texto */
+
+  /* ===== COMPORTAMENTO VISUAL ===== */
+  border-bottom: 2px solid #f77acb; /* Linha decorativa abaixo do título */
+  display: inline-block; /* Permite aplicar padding/border corretamente */
+  padding-bottom: 6px; /* Espaçamento abaixo do texto */
 }
 
-/* Texto */
+/* ===== Texto dos parágrafos ===== */
 #texto p {
-  line-height: 1.8;
-  margin-bottom: 12px;
-  font-size: 1.1rem;
-  text-align: center;
+  /* ===== TEXTO ===== */
+  line-height: 1.8; /* Espaçamento entre linhas */
+  margin-bottom: 12px; /* Espaço abaixo de cada parágrafo */
+  font-size: 1.1rem; /* Tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
 }
 
-/* Contador */
+/* ===== Contador ===== */
 #contador {
-  margin-top: 10px;
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #ff66c4;
-  text-shadow: 1px 1px 2px #00000050;
-  transition: all 0.3s ease-in-out;
-  padding: 10px 20px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);
-  display: inline-block;
-  border: 2px dashed #c300ff;
+  margin-top: 10px; /* Espaço acima */
+
+  /* ===== TEXTO ===== */
+  font-size: 1.6rem; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  color: #ff66c4; /* Cor rosa */
+  text-shadow: 1px 1px 2px #00000050; /* Sombra leve */
+
+  /* ===== COMPORTAMENTO VISUAL ===== */
+  transition: all 0.3s ease-in-out; /* Transição suave ao mudar */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  background: rgba(255, 255, 255, 0.05); /* Fundo semi-transparente */
+  display: inline-block; /* Permite padding e largura ajustável */
+  border: 2px dashed #c300ff; /* Borda tracejada roxa */
 }
 
-/* Músicas e playlists */
+/* ===== Músicas e playlists ===== */
 #musica iframe,
 #playlist iframe {
-  justify-content: center;
-  width: 75%;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  max-height: 160px;
-  border: 2px solid #fff;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  justify-content: center; /* Centraliza os iframes */
+
+  /* ===== COMPORTAMENTO ===== */
+  width: 75%; /* Largura relativa */
+  max-height: 160px; /* Altura máxima */
+  margin-bottom: 20px; /* Espaçamento inferior */
+
+  /* ===== FUNDO/VISUAL ===== */
+  border-radius: 12px; /* Arredonda as bordas */
+  border: 2px solid #fff; /* Borda branca */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2); /* Sombra clara */
 }
 
-/* Vídeo */
+/* ===== Vídeo ===== */
 #video video {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  max-height: 400px;
-  border: 2px solid #fff;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  width: 100%; /* Ocupa toda a largura disponível */
+
+  /* ===== FUNDO/VISUAL ===== */
+  border-radius: 12px; /* Bordas arredondadas */
+  margin-bottom: 20px; /* Espaço inferior */
+  max-height: 400px; /* Altura máxima */
+  border: 2px solid #fff; /* Borda branca */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2); /* Sombra leve */
 }
 
-/* Botões */
+/* ===== Área de Botões ===== */
 .botoes {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 20px;
-  align-items: center;
+  justify-content: center; /* Centraliza os botões */
+
+  /* ===== COMPORTAMENTO ===== */
+  display: flex; /* Ativa o flexbox */
+  flex-wrap: wrap; /* Permite quebra de linha */
+  gap: 40px; /* Espaço entre botões */
+  margin-top: 20px; /* Espaço acima */
+  align-items: center; /* Alinha verticalmente */
 }
 
+/* ===== Estilo dos Botões ===== */
 .btn {
-  font-size: 20px;
-  padding: 16px 32px;
-  border: 2px solid #fff;
-  background-color: rgb(38, 143, 234);
-  color: white;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  /* ===== TEXTO ===== */
+  font-size: 20px; /* Tamanho da fonte */
+  color: white; /* Cor do texto */
+
+  /* ===== COMPORTAMENTO ===== */
+  padding: 16px 32px; /* Espaçamento interno */
+  border: 2px solid #fff; /* Borda branca */
+  background-color: rgb(38, 143, 234); /* Cor azul */
+  border-radius: 12px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor tipo mãozinha */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transições suaves */
 }
 
+/* ===== Hover dos Botões ===== */
 .btn:hover {
-  background-color: #a83279;
-  transform: scale(1.08);
-  box-shadow: 0 0 12px #ff66c4;
+  background-color: #a83279; /* Altera a cor ao passar o mouse */
+  transform: scale(1.08); /* Aumenta um pouco o botão */
+  box-shadow: 0 0 12px #ff66c4; /* Sombra rosa */
 }
 
-/* Botão que foge */
+/* ===== Botão que foge ao passar o mouse ===== */
 #btn_nao:hover {
-  transform: translateX(80px);
+  transform: translateX(80px); /* Move o botão para a direita ao passar o mouse */
 }
 
-/* Responsividade */
+/* ===== Responsividade para dispositivos móveis ===== */
 @media (max-width: 480px) {
   .btn {
-    width: 100%;
-    max-width: 280px;
+    width: 100%; /* Botões ocupam 100% da largura */
+    max-width: 50px; /* Limitados a 50px */
   }
 }
 
-/* Corações flutuando */
+/* ===== Corações flutuando ===== */
 .hearts {
-  position: relative;
-  height: 100px;
-  pointer-events: none;
+  position: relative; /* Posição base para os filhos absolutos */
+
+  /* ===== COMPORTAMENTO ===== */
+  height: 100px; /* Altura fixa */
+  pointer-events: none; /* Corações não interferem na interação com outros elementos */
 }
 
 .heart {
-  position: absolute;
-  bottom: 0;
-  font-size: 2.5rem;
-  animation: floatUp 6s infinite ease-in-out;
-  opacity: 0.8;
-  color: #ff66c4;
+  position: absolute; /* Posiciona cada coração livremente */
+  bottom: 0; /* Começa do fundo */
+
+  /* ===== TEXTO/VISUAL ===== */
+  font-size: 2.5rem; /* Tamanho padrão do coração */
+  opacity: 0.8; /* Um pouco translúcido */
+  color: #ff66c4; /* Cor rosa */
+
+  /* ===== COMPORTAMENTO ===== */
+  animation: floatUp 6s infinite ease-in-out; /* Aplica animação de subida */
 }
-
-.heart:nth-child(2) { animation-delay: 1s; font-size: 2rem; }
-.heart:nth-child(3) { animation-delay: 2s; font-size: 3rem; }
-.heart:nth-child(4) { animation-delay: 3s; font-size: 2.3rem; }
-.heart:nth-child(5) { animation-delay: 4s; font-size: 2.7rem; }
-
-/* Animação de subida dos corações */
+/* ===== Animação dos corações ===== */
 @keyframes floatUp {
   0% {
     transform: translateY(0) scale(1);
     opacity: 0.8;
   }
   100% {
-    transform: translateY(-100%) scale(1.5);
+    transform: translateY(-120px) scale(1.5);
     opacity: 0;
   }
 }

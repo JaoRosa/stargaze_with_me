@@ -1,33 +1,53 @@
 <!DOCTYPE html>
+<!-- Define o tipo do documento como HTML5 -->
 <html lang="pt-BR">
-<!--<|aprovado 3|>-->
+<!-- Início do HTML e definição do idioma como português do Brasil -->
 
 <head>
-    <!--<|TELA 2|>-->
+    <!-- Cabeçalho do documento -->
     <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8 para suportar acentuação e símbolos -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Permite que a página seja responsiva em diferentes tamanhos de tela (como celular e tablet) -->
     <title>stargaze with me</title>
+    <!-- Define o título que aparecerá na aba do navegador -->
     <link rel="icon" href="assets/img/favicon.ico">
+    <!-- Ícone exibido na aba do navegador (favicon) -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Importa o arquivo CSS externo com os estilos da página -->
 </head>
-<!--<|aprovado 4|>-->
 
 <body>
-    <!--- tela de aviso -->
+    <!-- Corpo do documento, onde o conteúdo visível é exibido -->
+    <!-- Tela de aviso -->
     <div class='container' id="tela-aviso">
+        <!-- Container principal da tela de aviso, com id "tela-aviso" -->
         <div class="container" id="confirm">
+            <!-- Segundo container com id "confirm", centraliza e estiliza o conteúdo -->
             <h1>Não me mate, por favor!</h1>
+            <!-- Título principal com apelo emocional/divertido -->
             <p>Quer continuar? não vai ter volta</p>
+            <!-- Texto de alerta com tom dramático/humorístico -->
             <div style="align-items: end;">
+                <!-- Div com estilo inline para alinhar os botões ao final -->
                 <button class="btn" id="btn_SIM">SIM</button>
-                <button class="btn" id="btn_nao" onclick="desvia(this)" onmouseover="desvia(this)"
+                <!-- Botão com id "btn_SIM" que o usuário pode clicar para continuar -->
+                <button 
+                    class="btn" 
+                    id="btn_nao" 
+                    onclick="desvia(this)" 
+                    onmouseover="desvia(this)"
                     style="position: absolute; margin-left: 10px;">
+                    <!-- Botão com comportamento especial: ele "foge" ao passar o mouse ou clicar -->
                     NÃO
                 </button>
             </div>
         </div>
     </div>
+
     <script src="assets/js/script.js"></script>
+    <!-- Importa o JavaScript externo com as interações da página -->
+
 </body>
 
 </html>

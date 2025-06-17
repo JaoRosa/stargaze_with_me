@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<!--<html lang="pt-BR diz que a linguagem do site e portugues-->
+<!-- Define que este é um documento HTML5 -->
+<!-- Define que o idioma principal da página é português do Brasil -->
 <html lang="pt-BR">
-<!--<|aprovado |>-->
+<!--<|aprovado |>--><!-- Marca de aprovação opcional para controle interno -->
 
 <head>
-    <!--<|TELA 3|>-->
+    <!--<|TELA 3|>--> <!-- Cabeçalho da página, onde ficam as configurações principais -->
     <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8 para aceitar acentos e símbolos -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Garante que a página seja responsiva em dispositivos móveis -->
     <title>não me mata pfvo</title>
+    <!-- Título da aba do navegador (muito carinhoso, por sinal ♥) -->
     <link rel="icon" href="assets/img/favicon.ico">
+    <!-- Ícone que aparece na aba do navegador -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Linka o CSS com o estilo visual da página -->
 </head>
-<!--<|aprovado |>-->
+<!--<|aprovado |>--> <!-- Outra marca de aprovação opcional -->
 
 <body>
-    <!--- tela principal -->
+    <!-- Corpo do site — aqui começa o que o usuário vê -->
+    <!-- Tela principal da mensagem final -->
     <div class='container' id="tela-principal">
+        <!-- Caixa para música do Spotify -->
         <div class="container" id="musica">
             <iframe style="border-radius:12px"
-                src="https://open.spotify.com/embed/track/2Rmuzh89p29BeTIF63Opwo?utm_source=generator" width="100%"
-                height="352" frameBorder="0" allowfullscreen=""
+                src="https://open.spotify.com/embed/track/2Rmuzh89p29BeTIF63Opwo?utm_source=generator" 
+                width="100%" height="352" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy">
             </iframe>
-
         </div>
+
+        <!-- Caixa com o vídeo do casal -->
         <div class="container" id="video">
             <video src="assets/img/Vídeo do WhatsApp de 2025-06-11 à(s) 23.22.52_f094d91a.mp4"
-                alt="video do João e da camila no nova america" autoplay muted loop>
+                alt="video do João e da Camila no Nova América" autoplay muted loop>
             </video>
         </div>
+
+        <!-- Caixa com o texto emocional e acolhedor -->
         <div class="container" id="texto">
             <p>Você não é difícil de amar.</p>
             <p>Você não é uma filha ruim.</p>
@@ -39,26 +50,34 @@
             <p>Você não é irritante.</p>
             <p>Você não é substituível.</p>
             <p>E você não é emocionada por se importar demais.</p>
-            <p></strong> Isso é sensibilidade, é carinho, é entrega — e isso é lindo.</strong></p>
+            <p><strong>Isso é sensibilidade, é carinho, é entrega — e isso é lindo.</strong></p>
             <p>Você é, sim, a pessoa mais incrível que eu já conheci em toda a minha vida.</p>
             <p>E eu vou continuar te lembrando disso, mesmo quando você esquecer.<br>
                 Mesmo quando o mundo tentar te convencer do contrário.<br>
-                Mesmo quando você duvidar de si mesma.</p>
+                Mesmo quando você duvidar de si mesma.
+            </p>
             <p>Porque você vale cada palavra, cada gesto, cada cuidado.</p>
             <p><strong>Eu tô aqui. Pra ver você florescer sempre.</strong></p>
-            <p><strong>E eu to aqui pra cuidar de cada dodoi que foi feito no seu coração💖</strong></p>
+            <p><strong>E eu to aqui pra cuidar de cada dodói que foi feito no seu coração 💖</strong></p>
         </div>
+
+        <!-- Contador de tempo juntos -->
         <div class="container" id="tempo-juntos">
             <h2>Estamos juntos há:</h2>
-            <p id="contador"></p>
+            <p id="contador"></p> <!-- Aqui o JavaScript colocará o tempo em tempo real -->
         </div>
+
+        <!-- Caixa com a playlist do casal -->
         <div class="container" id="playlist">
             <iframe style="border-radius:12px"
-                src="https://open.spotify.com/embed/playlist/3sTs52cTFkBjYJkGZ5mhpw?utm_source=generator" width="100%"
-                height="352" frameBorder="0" allowfullscreen=""
+                src="https://open.spotify.com/embed/playlist/3sTs52cTFkBjYJkGZ5mhpw?utm_source=generator"
+                width="100%" height="352" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe>
+                loading="lazy">
+            </iframe>
         </div>
+
+        <!-- Corações flutuantes no fundo para dar um toque fofo e romântico -->
         <div class="hearts">
             <div class="heart" style="left: 10%;">💖</div>
             <div class="heart" style="left: 30%;">💗</div>
@@ -67,7 +86,9 @@
             <div class="heart" style="left: 90%;">💘</div>
         </div>
 
+        <!-- Importação do script com a lógica de contagem de tempo e animações -->
         <script src="assets/js/script.js"></script>
+    </div>
 </body>
 
 </html>
